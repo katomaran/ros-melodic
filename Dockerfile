@@ -10,7 +10,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C1CF6E31E6B
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update 
-RUN apt-get install -y python-pip python3-pip python3-yaml librealsense2* 
+RUN apt-get install -y python-pip python3-pip python3-yaml librealsense2*
 RUN apt-get install -y libpcap0.8-dev ros-melodic-teleop-twist-keyboard 
 RUN apt-get install -y ros-melodic-navigation ros-melodic-swri-rospy ros-melodic-joy 
 RUN apt-get install -y python-rosdep
@@ -22,14 +22,14 @@ RUN apt-get install -y python3-opencv python-catkin-tools ros-melodic-rslidar*
 RUN apt-get install -y wkhtmltopdf
 RUN apt-get install -y ros-melodic-ros-numpy
 RUN apt-get install -y python-backports-abc  python-backports.ssl-match-hostname python-bson python-bson-ext 
-RUN apt-get install -y python-singledispatch python-tornado ros-melodic-rosbridge-library ros-melodic-rosapi  
+RUN apt-get install -y python-singledispatch python-tornado ros-melodic-rosbridge-library ros-melodic-rosapi
 RUN apt-get install -y ros-melodic-rosbridge-msgs ros-melodic-rosbridge-suite
 RUN apt-get install -y software-properties-common apt-transport-https wget
 RUN apt-get install -y librealsense2-dkms librealsense2-utils ros-melodic-rosauth libpcap-dev
 RUN apt-get install -y ros-melodic-perception-pcl*
 RUN apt-get install -y ros-melodic-apriltag-ros*
-RUN apt-get install -y ros-melodic-rslidar*
 RUN apt-get install -y ros-melodic-sick-scan*
 RUN apt-get install -y libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev
 RUN apt-get install -y libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev
 RUN apt-get install -y ros-melodic-realsense2-camera
+RUN apt-get install -y ros-melodic-ira-laser-tools ros-melodic-laser-filters
